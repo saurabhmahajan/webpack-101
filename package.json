@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack src/main.js dist/bundle.js",
-    "watch": "webpack src/main.js dist/bundle.js --watch"
+    "watch": "npm run build -- --watch"
   },
   "keywords": [],
   "author": "",
