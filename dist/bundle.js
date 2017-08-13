@@ -65,11 +65,14 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var notification = __webpack_require__(1);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__notification__ = __webpack_require__(1);
 
-notification.notify('this is a message');
+
+Object(__WEBPACK_IMPORTED_MODULE_0__notification__["a" /* notify */])('this is a message');
 
 
 /***/ }),
@@ -77,8 +80,7 @@ notification.notify('this is a message');
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["notify"] = notify;
+/* harmony export (immutable) */ __webpack_exports__["a"] = notify;
 
 function notify(message){
     alert(message);

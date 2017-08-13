@@ -1,3 +1,3 @@
-var notification = require('./notification');
+import {notify} from './notification';
 
-notification.notify('this is a message');
+notify('this is a message');
