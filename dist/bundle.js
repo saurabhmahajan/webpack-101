@@ -65,9 +65,24 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-alert('changed this again! and again');
+var notification = __webpack_require__(1);
+
+notification.notify('this is a message');
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["notify"] = notify;
+
+function notify(message){
+    alert(message);
+}
 
 /***/ })
 /******/ ]);

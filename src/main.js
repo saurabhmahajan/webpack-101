@@ -1,1 +1,3 @@
-alert('changed this again! and again');
+var notification = require('./notification');
+
+notification.notify('this is a message');
