@@ -1,3 +1,3 @@
-import {notify} from './notification';
+import notify from './notification';
 
 notify('this is a message');
