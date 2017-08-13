@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-alert('changed this again. and again!');
+alert('changed this again! and again');
 
 /***/ })
 /******/ ]);
