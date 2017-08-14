@@ -65,18 +65,32 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__main_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__main_css__);
-// import notification from './notification';
+
+
+var _main = __webpack_require__(1);
+
+var _main2 = _interopRequireDefault(_main);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } // import notification from './notification';
 
 // notification.notify('this is a message');
 // notification.log('this is a log');
 
+var Main = function Main() {
+    _classCallCheck(this, Main);
 
+    var mul = [5, 10, 15].map(function (num) {
+        return num * 2;
+    });
+    console.log(mul);
+};
+
+new Main();
 
 /***/ }),
 /* 1 */
