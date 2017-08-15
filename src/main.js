@@ -4,11 +4,12 @@
 // notification.log('this is a log');
 
 import css from './main.css';
+require('./main.scss');
 
 class Main{
     constructor(){
-        let mul = [5, 10, 15].map(num => num * 2);
-        console.log(mul)
+        let numbers = [5, 10, 15].map(num => num * 2);
+        console.log(numbers)
     }
 }
 

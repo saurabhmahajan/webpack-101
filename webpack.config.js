@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const inProduction = (process.env.NODE_ENV == 'production');
 
 module.exports = {
     entry: './src/main.js',
@@ -9,12 +10,16 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
-                test:/\.css$/,
+                test:/\.s[ac]ss$/,
+                use:["style-loader", "css-loader", "sass-loader"]
+            },
+            {
+                test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }, 
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -24,6 +29,10 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+
     ]
+};
+
+if (inProduction) {
+    module.exports.plugins.push(new webpack.optimize.UglifyJsPlugin());
 }
