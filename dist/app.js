@@ -81,7 +81,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 // notification.notify('this is a message');
 // notification.log('this is a log');
 
-//require('./main.scss');
+__webpack_require__(6);
 
 var Main = function Main() {
     _classCallCheck(this, Main);
@@ -674,6 +674,12 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

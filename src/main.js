@@ -4,7 +4,7 @@
 // notification.log('this is a log');
 
 import css from './main.css';
-//require('./main.scss');
+require('./main.scss');
 
 class Main{
     constructor(){
